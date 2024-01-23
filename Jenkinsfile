@@ -20,7 +20,6 @@ podTemplate(containers: [
             sh 'git clone https://github.com/difh-ite/jenkins_python.git' 
             sh 'ls -la jenkins_python'  
           } 
-
           stage('Installing Packages')  
           { 
             sh 'pwd' 
@@ -29,7 +28,6 @@ podTemplate(containers: [
             sh 'git clone https://github.com/difh-ite/jenkins_python.git' 
             sh 'ls -la jenkins_python'  
           } 
-
           stage('Static Code Check')  
           { 
             sh 'pwd' 
@@ -38,7 +36,6 @@ podTemplate(containers: [
             sh 'git clone https://github.com/difh-ite/jenkins_python.git' 
             sh 'ls -la jenkins_python' 
           } 
-
           stage('Unit Test Check')  
           { 
             sh 'python3 -m unittest check_os.py'
@@ -47,5 +44,4 @@ podTemplate(containers: [
       } 
     } 
   } 
-}
 
