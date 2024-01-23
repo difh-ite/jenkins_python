@@ -3,8 +3,7 @@ podTemplate(containers: [
     name: 'python',  
     image: 'jenkins/inbound-agent-python:latest',  
     command: 'sleep',  
-    args: '30d'
-  ) 
+    args: '30d') 
 ])  
 { 
   node(POD_LABEL)  
@@ -12,8 +11,7 @@ podTemplate(containers: [
     stage('Get a Python Project')  
     { 
       container('python')  
-      { 
-        stages {        
+      {        
           stage('Checkout Code')  
           { 
             sh 'pwd' 
