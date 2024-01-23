@@ -17,7 +17,6 @@ podTemplate(containers: [
             sh 'pwd'
             sh 'ls -la'
             sh 'python -V'
-            sh 'hostname'
             sh 'git clone https://github.com/difh-ite/jenkins_python.git'
             sh 'ls -la jenkins_python'
           }
