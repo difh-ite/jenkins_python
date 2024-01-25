@@ -22,7 +22,10 @@ podTemplate(containers: [
           } 
           stage('Installing Packages')  
           { 
-            sh 'pip install -r requirements.txt' 
+            sh 'apt-get install python3-pip'
+            sh 'apt-get install python3-requests'
+            sh 'apt-get install python3-psutil'
+
           } 
           stage('Static Code Check')  
           { 
