@@ -22,23 +22,16 @@ podTemplate(containers: [
           } 
           stage('Installing Packages')  
           { 
-            sh 'pwd' 
-            sh 'ls -la' 
-            sh 'python -V' 
-            sh 'git clone https://github.com/difh-ite/jenkins_python.git' 
-            sh 'ls -la jenkins_python'  
+            sh 'pip install -r requirements.txt' 
           } 
           stage('Static Code Check')  
           { 
-            sh 'pwd' 
-            sh 'ls -la' 
-            sh 'python -V' 
-            sh 'git clone https://github.com/difh-ite/jenkins_python.git' 
-            sh 'ls -la jenkins_python' 
+            sh 'python3 sys2.py' 
+ 
           } 
           stage('Unit Test Check')  
           { 
-            sh 'python3 -m unittest check_os.py'
+            sh 'python3 -m unittest sys2.py'
           } 
         }
       } 
