@@ -3,7 +3,7 @@ import unittest
 from unittest.mock import patch
 from sys2 import SystemMonitor # assuming system_monitor.py is in the same directory
 
-class TestSystemMonitor(unittest.TestCase)
+class TestSystemMonitor(unittest.TestCase):
     @patch('psutil.disk_usage')
     def test_check_disk_usage(self, mock_disk_usage)
         mock_disk_usage.return_value.percent = 25
