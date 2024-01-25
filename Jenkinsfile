@@ -29,7 +29,7 @@ podTemplate(containers: [
           } 
           stage('Static Code Check')  
           { 
-            sh 'python3 sys2.py' 
+            sh 'python3 jenkins_python/sys2.py' 
           } 
           stage('Unit Test Check')  
           { 
