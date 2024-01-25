@@ -11,7 +11,7 @@ class TestSystemMonitor(unittest.TestCase):
 
     @patch('psutil.cpu_percent')
     def test_check_cpu_utilization(self, mock_cpu_percent):
-        mock_cpu_percent.return_value = 50
+        mock_cpu_percent.return_value = 80
         monitor = SystemMonitor()
         self.assertFalse(monitor.check_cpu_utilization())
 
