@@ -15,7 +15,6 @@ class SystemMonitor:
         """
         Initialize the SystemMonitor object.
         """
-        pass
 
     def check_disk_usage(self):
         """
