@@ -25,11 +25,12 @@ podTemplate(containers: [
             sh 'apt-get install python3-pip -y'
             sh 'apt-get install python3-requests -y'
             sh 'apt-get install python3-psutil -y'
+            sh 'apt install pylint'
 
           } 
           stage('Static Code Check')  
           { 
-            sh 'python3 jenkins_python/sys2.py' 
+            sh 'pylint jenkins_python/sys2.py' 
           } 
           stage('Unit Test Check')  
           { 
