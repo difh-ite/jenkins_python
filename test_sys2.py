@@ -1,7 +1,7 @@
 # test_system_monitor.py
 import unittest
 from unittest.mock import patch
-from sys2.py import SystemMonitor # assuming system_monitor.py is in the same directory
+from sys2 import SystemMonitor # assuming system_monitor.py is in the same directory
 
 class TestSystemMonitor(unittest.TestCase)
     @patch('psutil.disk_usage')
