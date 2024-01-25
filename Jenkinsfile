@@ -34,7 +34,7 @@ podTemplate(containers: [
           } 
           stage('Unit Test Check')  
           { 
-            sh 'curl https://github.com/difh-ite/jenkins_python/test_sys2.py -o test_sys2.py'
+            sh 'git clone https://github.com/difh-ite/jenkins_python.git'
             sh 'python3 -m unittest jenkins_python/test_sys2.py'
           } 
         }
