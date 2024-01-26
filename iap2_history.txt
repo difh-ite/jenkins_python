@@ -1,0 +1,128 @@
+    1  sudo nano /etc/default/grub
+    2  sudo update-grub2
+    3  history
+    4  ls
+    5  cd Downloads
+    6  df
+    7  cd /media
+    8  cd analyst/
+    9  ls
+   10  cd VBox_GAs_6.1.0/
+   11  ls
+   12  sudo ./VBoxLinuxAdditions.run 
+   13  sudo apt install build-essential dkms linux-headers-$(uname -r)
+   14  sudo ./VBoxLinuxAdditions.run 
+   15  reboot
+   16  history
+   17  df
+   18  sudo shutdown -h now
+   19  sudo apt install -y snapd git
+   20  sudo shutdown -h now
+   21  cd /etc/ansible
+   22  exit
+   23  ip address
+   24  ping 192.168.23.139
+   25  ls -ltr
+   26  pwd
+   27  sudo apt install vim
+   28  sudo apt-get update
+   29  sudo apt install vim
+   30  sudo vim docker-install.yaml
+   31  ls -ltr
+   32  pwd
+   33  minikube ?
+   34  minikube start
+   35  ls -ltr
+   36  cd documents
+   37  ls -ltr
+   38  cd D
+   39  cd Documents/
+   40  ls -ltr
+   41  mv service-account.yaml ..
+   42  cd ..
+   43  ls -ltr
+   44  kubectl apply -f service-account.yaml 
+   45  kubectl create namespace devops-tools
+   46  minikube dashboard
+   47  minikube start
+   48  minikube kubectl -- get pods -A
+   49  kubectl apply -f service-account.yaml 
+   50  minikube kubectl -- get po -A
+   51  alias kubectl="minikube kubectl --"
+   52  kubectl apply -f service-account.yaml 
+   53  kubectl get sa -A
+   54  kubectl get serviceaccount
+   55  kubectl get role
+   56  kubectl get rolebinding
+   57  kubectl describe role
+   58  cd D
+   59  cd
+   60  cd Documents/
+   61  ls -ltr
+   62  mv persistentstorage.yaml ..
+   63  cd ..
+   64  ls -ltr
+   65  kubectl apply -f persistentstorage.yaml 
+   66  kubectl get pv,pvc
+   67  cd Documents/
+   68  ls -ltr
+   69  mv deployment.yaml ..
+   70  cd 
+   71  ls -ltr
+   72  kubectl apply -f deployment.yaml 
+   73  kubectl rollout status deployment jenkins-deployment
+   74  ls -ltr
+   75  cd Documents/
+   76  ls -ltr
+   77  cd ..
+   78  cd Documents/
+   79  ls -ltr
+   80  mv service.yaml ..
+   81  cd
+   82  ls -ltr
+   83  kubectl apply -f service.yaml
+   84  kubectl get services
+   85  minikube ip
+   86  kubectl describe pod
+   87  kubectl logs jenkins-deployment-75787d68bf-g44bw
+   88  minikube ip
+   89  docker pull jenkins/inbound-agent
+   90  docker run -u root -i -t jenkins/inbound-agent bash
+   91  sudo minikube ssh
+   92  minikube status
+   93  docker ps
+   94  minikube statrt
+   95  minikube status
+   96  minikube start
+   97  docker images
+   98  ps -a
+   99  docker ps -a
+  100  minikube ssh
+  101  docker run -u root -i -t --name jenkins-agent-container jenkins/inbound-agent bash
+  102  minikube status
+  103  minikube ssh
+  104  docker ps
+  105  minikube ssh
+  106  docker images
+  107  docker ps
+  108  docker run -u root -it --name jenkins/inbound-agent-python jenkins/inbound-agent bash
+  109  minikube ssh
+  110  minikube start
+  111  ps -a
+  112  docker ps -a
+  113  docker rm fe8828599f5a
+  114  docker rm 19f79fc907b7
+  115  minikube ssh
+  116  sudo docker ps | grep jenkins
+  117  man flake8
+  118  flake
+  119  flake8
+  120  minikube status
+  121  minikube start --docker=driver
+  122  minikube start --driver=docker
+  123  minikube ssh
+  124  minikube status
+  125  minikube start --driver=docker
+  126  minikube ssh
+  127  history
+  128  history >> IAP2
